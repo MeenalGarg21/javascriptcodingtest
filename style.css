@@ -1,0 +1,26 @@
+
+ body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    margin:10px;
+
+}
+.wrong-input{
+    border:1px solid red;
+
+}
+.right-input{
+    border:1px solid green;
+
+}
+button{
+    color:blue;
+    border-color: white;
+}
+button:hover{
+    color: royalblue;
+    background-color: royalblue;
+}
