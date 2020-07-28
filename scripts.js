@@ -1,9 +1,10 @@
+'use strict'
 function ValidateForm()
 {
-    var username=document.getElementById("username");
-    var email=document.getElementById("email");
-    var password=document.getElementById("password");
-    var confirm_password=document.getElementById("confirm_password");
+    let username=document.getElementById("username")
+    let email=document.getElementById("email")
+    let password=document.getElementById("password")
+    let confirmPassword=document.getElementById("confirmPassword")
     if(username.value.length<3)
         {
             email.className="wrong-input";
@@ -40,10 +41,10 @@ else{
     valid=true;
 
 }
-if(password.value!=confirm_password.value)
+if(password.value!=confirmPassword.value)
 {
-    confirm_password.className="wrong-input";
-    confirm_password.nextElementSibling.innerHTML="password cant be less than 6";
+    confirmPassword.className="wrong-input";
+    confirmPassword.nextElementSibling.innerHTML="password cant be less than 6";
     valid=false;
 }
 else{
